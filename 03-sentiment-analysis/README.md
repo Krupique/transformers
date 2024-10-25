@@ -71,6 +71,30 @@ DistilBERT uses a process called **knowledge distillation**, where a smaller "st
 
 This architecture is commonly used for various NLP tasks, including text classification, named entity recognition, and language translation across multiple languages.
 
+
+**Using DistilBERT Base Multilingual Cased for Transfer Learning**
+
+DistilBERT base multilingual cased is a lighter, faster version of BERT that supports multiple languages and is well-suited for transfer learning on NLP tasks such as text classification, sentiment analysis, or question answering across diverse languages. The following steps outline how to fine-tune DistilBERT on a new dataset to adapt it to a specific task.
+
+**Step 1: Load the Model and Tokenizer**
+
+The Hugging Face Transformers library provides an easy way to load pre-trained models. We’ll start by loading the `distilbert-base-multilingual-cased` model along with its tokenizer, specifying the number of labels required for our task (e.g., 2 labels for binary classification).
+
+**Step 2: Preprocess Input Data**
+
+Before passing text to the model, it needs to be tokenized. Tokenization converts text into numerical format, along with padding and truncation to ensure uniform input lengths, which is crucial for efficient batching.
+
+**Step 3: Fine-Tune the Model**
+
+To adapt DistilBERT to our specific task, we'll fine-tune it on labeled data. This can be done efficiently using Hugging Face’s `Trainer` API, which manages the training loop and optimizes model weights to minimize loss on the training data.
+
+**Step 4: Evaluate and Deploy**
+
+After fine-tuning, we'll evaluate the model on a validation dataset to measure performance. Then, we'll save the fine-tuned model for future use and deploy it to handle inference requests.
+
+
+
+
 ---
 ### Benchmark
 Comparing the three developed archtectures:
@@ -87,20 +111,3 @@ Comparing the three developed archtectures:
 * Convert the transformer file to a python file;
 * MLOps for transformer;
 * Model Deploy on AWS.
-
-
----
-Falar sobre:
-[ ] No código, explicar sobre os pacotes e técnicas utilizadas, tais como Spacy, método de Encode, etc.
-[x] Falar sobre a ideia do projeto
-[x] Os três modelos desenvolvidos (Rede Neural Normal, LSTM e Arquitetura Transformers)
-[x] Falar sobre a plataforma HuggingFace
-[x] Falar sobre a arquitetura Bert
-[ ] Comparar os resultados
-[ ] Olhar o código do Transformers e o que dá para documentar melhor
-
-Próximos passos:
-[ ] Documentação
-[ ] Algoritmo em Python pronto para MLOps
-[ ] Como encaixar Docker e outras ferramentas parecidas
-[ ] Subir o modelo para produção utilizando AWS
