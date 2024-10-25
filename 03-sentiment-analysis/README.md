@@ -1,5 +1,4 @@
-# Fine-Tuning de um modelo Transformer para Classificação de Sentimento
-
+# Fine-Tuning a Transformer Model for Sentiment Classification
 
 # Introduction
 In recent years, sentiment analysis has become an essential tool for understanding the opinions and emotions expressed in large volumes of textual data. With the exponential growth of digital interactions—whether on social media, forums, or product reviews—the need to interpret these emotions in an automated way has become increasingly relevant.
@@ -108,6 +107,6 @@ Comparing the three developed archtectures:
 
 ---
 ### Next steps
-* Convert the transformer file to a python file;
+* Convert transformer notebook to python file;
 * MLOps for transformer;
 * Model Deploy on AWS.
