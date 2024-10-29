@@ -1,7 +1,10 @@
 01-raw-transformers/ignore/
+
 02-transformers-explanation/ignore/
+
 03-sentiment-analysis/ignore/
 03-sentiment-analysis/models/
 
-
-04-lang-gpt/
+04-lang-gpt/ignore/
+04-lang-gpt/vosk_models
+04-lang-gpt/lang-gpt-example.ipynb
