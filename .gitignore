@@ -10,3 +10,6 @@
 04-lang-gpt/vosk_models
 04-lang-gpt/lang-gpt-example.ipynb
 04-lang-gpt/output.mp3
+
+05-text-generation-llm/ignore/
+05-text-generation-llm/adjusted_model/
