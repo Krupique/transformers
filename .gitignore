@@ -13,3 +13,5 @@
 
 05-text-generation-llm/ignore/
 05-text-generation-llm/adjusted_model/
+
+06-text-generation-llm-gpt2/ignore/
