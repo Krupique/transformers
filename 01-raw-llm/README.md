@@ -158,64 +158,64 @@ In summary, BERT is one of the cornerstones of modern LLMs, directly influencing
 
 ---
 
-## Métricas de Avaliação de Performance dos LLMs
+## Performance Evaluation Metrics for LLMs
 
-A avaliação da performance de LLMs (Large Language Models) em tarefas de Processamento de Linguagem Natural (PLN) envolve várias métricas que ajudam a medir a precisão, a coerência e a relevância dos textos gerados ou das previsões feitas. As métricas variam dependendo da tarefa específica, mas aqui estão algumas das mais comuns:
+Evaluating the performance of LLMs (Large Language Models) in Natural Language Processing (NLP) tasks involves several metrics that help measure the accuracy, coherence, and relevance of the generated text or predictions. These metrics vary depending on the specific task, but here are some of the most common:
 
-**1. Perplexidade**
+**1. Perplexity**
 
-- **Definição**: Perplexidade mede o quão bem o modelo prevê a próxima palavra em uma sequência de texto. Uma baixa perplexidade indica que o modelo está prevendo com mais confiança e precisão.
-- **Aplicação**: Muito usada para avaliar modelos de linguagem em tarefas de geração de texto, como resposta a perguntas ou tradução automática.
-- **Limitações**: Embora seja uma métrica útil para medir a "confiança" de um modelo, ela nem sempre se correlaciona com a qualidade percebida do texto gerado.
+- **Definition**: Perplexity measures how well the model predicts the next word in a sequence of text. Low perplexity indicates that the model is predicting with more confidence and accuracy.
+- **Application**: Widely used to evaluate language models in text generation tasks, such as question answering or machine translation.
+- **Limitations**: While it is a useful metric for measuring a model's "confidence," it does not always correlate with the perceived quality of the generated text.
 
 **2. BLEU (Bilingual Evaluation Understudy)**
 
-- **Definição**: BLEU é uma métrica que compara o texto gerado pelo modelo com referências (ou textos de referência) usando a sobreposição de n-gramas (sequências de palavras). A pontuação BLEU vai de 0 a 1 (ou 0 a 100%) e indica quão próximo o texto gerado está da referência.
-- **Aplicação**: Comumente usada em tradução automática, mas também aplicável em tarefas como resumo de texto.
-- **Limitações**: BLEU não leva em conta a qualidade semântica e muitas vezes penaliza injustamente variações válidas que não estão nas referências.
+- **Definition**: BLEU is a metric that compares the generated text with reference texts using the overlap of n-grams (sequences of words). The BLEU score ranges from 0 to 1 (or 0 to 100%) and indicates how close the generated text is to the reference.
+- **Application**: Commonly used in machine translation but also applicable in tasks such as text summarization.
+- **Limitations**: BLEU does not account for semantic quality and often unfairly penalizes valid variations not found in the references.
 
 **3. ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**
 
-- **Definição**: ROUGE mede a similaridade entre o texto gerado e o de referência com base em contagens de sobreposição de n-gramas, palavras e subsequências de palavras. As variantes mais comuns são ROUGE-N, ROUGE-L, e ROUGE-S.
-- **Aplicação**: Utilizada principalmente em tarefas de resumo de texto e geração de respostas.
-- **Limitações**: ROUGE também pode ser insensível a variações semânticas válidas, além de ser uma métrica baseada apenas em similaridade de superfície.
+- **Definition**: ROUGE measures the similarity between the generated text and the reference text based on n-gram overlap counts, words, and subsequences of words. The most common variants are ROUGE-N, ROUGE-L, and ROUGE-S.
+- **Application**: Primarily used in text summarization and response generation tasks.
+- **Limitations**: ROUGE can also be insensitive to valid semantic variations, and it is a surface-level similarity-based metric.
 
-**4.** **METEOR (Metric for Evaluation of Translation with Explicit ORdering)**
+**4. METEOR (Metric for Evaluation of Translation with Explicit ORdering)**
 
-- **Definição**: A métrica METEOR foca na correspondência entre sinônimos, inflexões e ordem das palavras, oferecendo uma análise mais detalhada em comparação ao BLEU e ROUGE.
-- **Aplicação**: Utilizada em tradução automática e outras tarefas de geração de texto, como resumo, pois leva em conta tanto a correspondência exata quanto a ordem.
-- **Limitações**: Como é mais complexa, METEOR é mais custosa computacionalmente e pode não se aplicar bem em textos mais longos.
+- **Definition**: The METEOR metric focuses on matching synonyms, inflections, and word order, providing a more detailed analysis compared to BLEU and ROUGE.
+- **Application**: Used in machine translation and other text generation tasks, such as summarization, as it considers both exact matches and word order.
+- **Limitations**: As it is more complex, METEOR is computationally expensive and may not apply well to longer texts.
 
-**5.** **F1-Score**
+**5. F1-Score**
 
-- **Definição**: O F1-Score é a média harmônica entre precisão e recall. A precisão mede a porcentagem de previsões corretas em relação às previsões totais, enquanto o recall mede a porcentagem de previsões corretas em relação aos dados corretos.
-- **Aplicação**: Usada em tarefas de classificação, como análise de sentimentos, classificação de perguntas e respostas e detecção de entidades nomeadas.
-- **Limitações**: Pode não capturar a complexidade das respostas geradas em tarefas de geração de texto.
+- **Definition**: The F1-Score is the harmonic mean of precision and recall. Precision measures the percentage of correct predictions out of total predictions, while recall measures the percentage of correct predictions out of the correct data.
+- **Application**: Used in classification tasks, such as sentiment analysis, question and answer classification, and named entity detection.
+- **Limitations**: It may not capture the complexity of the responses generated in text generation tasks.
 
-**6.** **Exact Match (EM)**
+**6. Exact Match (EM)**
 
-- **Definição**: EM mede a proporção de respostas exatas (idênticas) entre a resposta do modelo e a resposta correta esperada.
-- **Aplicação**: Comum em tarefas de resposta a perguntas, especialmente para perguntas onde há uma única resposta correta.
-- **Limitações**: Não captura variações linguísticas válidas e é rígida, sendo mais adequada para perguntas com respostas curtas e objetivas.
+- **Definition**: EM measures the proportion of exact (identical) responses between the model's answer and the expected correct answer.
+- **Application**: Common in question answering tasks, especially for questions with a single correct answer.
+- **Limitations**: It does not capture valid linguistic variations and is rigid, making it more suitable for questions with short, objective answers.
 
 **7. CIDEr (Consensus-based Image Description Evaluation)**
 
-- **Definição**: CIDEr mede a similaridade entre a descrição gerada e as descrições de referência usando o consenso entre várias descrições de referência.
-- **Aplicação**: Embora seja mais popular em geração de descrições de imagens, pode ser usada em tarefas de resumo de texto ou em tarefas multimodais, onde o modelo gera descrições a partir de dados de entrada variados.
-- **Limitações**: Depende de múltiplas descrições de referência para um bom desempenho, o que nem sempre é viável.
+- **Definition**: CIDEr measures the similarity between the generated description and reference descriptions using consensus from multiple reference descriptions.
+- **Application**: While it is more popular in image captioning, it can also be used in text summarization tasks or multimodal tasks, where the model generates descriptions from varied input data.
+- **Limitations**: It relies on multiple reference descriptions for good performance, which is not always feasible.
 
-**8. Métrica de Coerência e Fluência**
+**8. Coherence and Fluency Metric**
 
-- **Definição**: São métricas qualitativas que avaliam se o texto gerado é coerente e fluente, ou seja, se faz sentido e é bem estruturado. Em geral, são medidas subjetivas, às vezes usando avaliações humanas, ou calculadas com base na probabilidade de um texto conforme modelos de linguagem como BERT.
-- **Aplicação**: Úteis para modelos de geração de texto onde a coerência narrativa é essencial, como em diálogos e redação criativa.
-- **Limitações**: Avaliações qualitativas dependem da percepção humana, o que torna difícil padronizar e automatizar.
+- **Definition**: These are qualitative metrics that evaluate whether the generated text is coherent and fluent, meaning it makes sense and is well-structured. Generally, they are subjective measures, sometimes using human evaluations or calculated based on the probability of a text according to language models like BERT.
+- **Application**: Useful for text generation models where narrative coherence is essential, such as in dialogue and creative writing.
+- **Limitations**: Qualitative evaluations depend on human perception, making it difficult to standardize and automate.
 
-**9. Human Evaluation (Avaliação Humana)**
+**9. Human Evaluation**
 
-- **Definição**: Avaliação humana envolve pessoas que julgam a qualidade dos textos gerados, classificando critérios como relevância, coerência, fluência e adequação.
-- **Aplicação**: Fundamental para tarefas onde as métricas automáticas não capturam bem a qualidade, como em geração criativa de conteúdo.
-- **Limitações**: É uma avaliação subjetiva, custosa e demorada, além de difícil de reproduzir.
+- **Definition**: Human evaluation involves people judging the quality of generated texts, rating criteria such as relevance, coherence, fluency, and appropriateness.
+- **Application**: Critical for tasks where automatic metrics do not capture the quality well, such as in creative content generation.
+- **Limitations**: It is subjective, costly, and time-consuming, and difficult to reproduce.
 
-**Resumo das Métricas de Avaliação de LLMs**
+**Summary of LLMs Evaluation Metrics**
 
-As métricas de avaliação de LLMs são diversas e variam de acordo com a tarefa. Métricas baseadas em n-gramas (como BLEU, ROUGE e METEOR) são úteis, mas muitas vezes limitadas, enquanto métricas mais complexas, como CIDEr e avaliações humanas, são necessárias para entender o desempenho em tarefas que exigem criatividade e flexibilidade. Em última análise, o uso combinado de várias métricas fornece uma visão mais abrangente e robusta da performance dos LLMs.
+LLM evaluation metrics are diverse and vary depending on the task. N-gram-based metrics (such as BLEU, ROUGE, and METEOR) are useful but often limited, while more complex metrics like CIDEr and human evaluations are necessary to understand performance in tasks requiring creativity and flexibility. Ultimately, the combined use of several metrics provides a more comprehensive and robust view of LLM performance.
