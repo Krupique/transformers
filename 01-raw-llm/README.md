@@ -1,4 +1,4 @@
-# Creating a LLM model from Scracth
+# Criando um Modelo de LLM baseado no BERT a partir do zero
 
 ## Objetivo do Projeto
 
@@ -30,7 +30,7 @@ Este projeto tem como objetivo criar um Modelo de Linguagem Grande (LLM) baseado
 7. **Realização de Previsões com o Modelo**  
    Utilizar o modelo treinado para inferir resultados em dados novos, demonstrando sua aplicação prática e capacidade preditiva.
 
-
+---
 
 ## **Conceito de IA Generativa**
 
@@ -48,8 +48,9 @@ A Inteligência Artificial Generativa, especialmente no contexto dos Large Langu
 
 É importante ressaltar  que, apesar de sua capacidade avançada, os modelos generativos têm limitações, como a possibilidade de gerar informações incorretas ou tendenciosas, e a falta de  entendimento  real  do  mundo  ou  de  consciência.  Além  disso,  o  uso  responsável  desses modelos é um tema de constante debate, envolvendo questões éticas e de direitos autorais.
 
+---
 
-## **Aplicações de IA Generativa**
+## Aplicações de IA Generativa
 
 A  IA  Generativa  tem  encontrado  aplicações  em  uma  variedade  de  campos  e  contextos, seguem abaixo alguns exemplos:
 
@@ -94,11 +95,11 @@ Estes são apenas alguns exemplos e a lista continua crescendo à medida que a t
 
 ---
 
-**O que é Processamento de Linguagem Natural?**
+## O que é Processamento de Linguagem Natural?
 
 Processamento de Linguagem Natural (PLN) é um campo de estudo e aplicação que se situa na interseção da ciência da computação, inteligência artificial e linguística. O objetivo do PLN é capacitar  os  computadores para  entender,  interpretar,  manipular  e  responder  a  linguagem humana de uma forma útil e significativa. Aqui estão os principais aspectos do PLN:
 
-- **Compreensão  de  Linguagem**: PLN  envolve  o  desenvolvimento  de  algoritmos  e  sistemas que permitem aos computadores compreender texto e fala humanos. Isso inclui a capacidade de entender gramática, semântica, contexto e nuances da linguagem.]
+- **Compreensão  de  Linguagem**: PLN  envolve  o  desenvolvimento  de  algoritmos  e  sistemas que permitem aos computadores compreender texto e fala humanos. Isso inclui a capacidade de entender gramática, semântica, contexto e nuances da linguagem.
 - **Geração  de  Linguagem**: Além  de  compreender  a  linguagem,  o  PLN  também  aborda  a geração de texto e fala. Isso pode envolver a criação de respostas coerentes em uma conversa, a geração de textos escritos em diferentes estilos, ou a tradução automática entre idiomas.
 - **Análise  de  Sentimento**: O  PLN  pode  ser  usado  para  analisar  opiniões  e  sentimentos  em textos, como avaliar se um comentário é positivo, negativo ou neutro.
 - **Extração  de  Informações**: Essa  área  do  PLN  foca  em  extrair  informações  específicas  de textos, como nomes, locais, datas ou outros dados relevantes.
@@ -111,7 +112,7 @@ PLN é uma área de pesquisa e desenvolvimento ativa e em rápida evolução, im
 
 ---
 
-**LLMs (Large Language Models) e a Revolução em NLP**
+## LLMs (Large Language Models) e a Revolução em NLP
 
 Os Large Language Models (LLMs) representam uma das inovações mais significativas no campo   do   Processamento   de   Linguagem   Natural   (PLN).   Esses   modelos   são   sistemas   de Inteligência Artificial   treinados   em   vastos   conjuntos   de   dados   textuais,   permitindo-lhes compreender e gerar linguagem humana de maneira surpreendentemente coerente e relevante.
 
@@ -125,8 +126,9 @@ Contudo, existem desafios e limitações. Um deles é o viés, que pode ser iner
 
 Os LLMs representam um salto significativo em PLN, oferecendo potencial para inúmeras aplicações  práticas  e  criativas.  No  entanto,  seu  uso  responsável  e  a  superação  de  desafios técnicos e éticos continuam sendo áreas de intensa pesquisa e desenvolvimento.
 
+---
 
-**LLMs (Large Language Models) e a Revolução em NLP**
+## LLMs (Large Language Models) e a Revolução em NLP
 
 Os Large Language Models (LLMs) representam uma das inovações mais significativas no campo   do   Processamento   de   Linguagem   Natural   (PLN).   Esses   modelos   são   sistemas   de Inteligência Artificial   treinados   em   vastos   conjuntos   de   dados   textuais,   permitindo-lhes compreender e gerar linguagem humana de maneira surpreendentemente coerente e relevante.
 
@@ -140,7 +142,9 @@ Contudo, existem desafios e limitações. Um deles é o viés, que pode ser iner
 
 Os LLMs representam um salto significativo em PLN, oferecendo potencial para inúmeras aplicações  práticas  e  criativas.  No  entanto,  seu  uso  responsável  e  a  superação  de  desafios técnicos e éticos continuam sendo áreas de intensa pesquisa e desenvolvimento.
 
-**Qual a Relação Entre Transformers e LLMs**
+---
+
+## Qual a Relação Entre Transformers e LLMs
 
 Transformers e LLMs (Large Language Models) estão diretamente relacionados no campo da NLP e aprendizado de máquina. Vamos detalhar essa relação:
 
@@ -165,7 +169,28 @@ A capacidade dos Transformers de lidar com dependências de longo alcance em tex
 
 ---
 
-**Métricas de Avaliação de Performance dos LLMs**
+## Arquitetura BERT e sua Relação com os LLMs
+
+O **BERT (Bidirectional Encoder Representations from Transformers)** é uma das arquiteturas mais influentes no campo do Processamento de Linguagem Natural (PLN) e um marco no desenvolvimento de Modelos de Linguagem Grande (LLMs). Criado pelo Google AI em 2018, o BERT é baseado na arquitetura Transformer e introduziu o conceito de aprendizado bidirecional para modelagem de linguagem. Isso significa que ele analisa o contexto de palavras olhando simultaneamente para os tokens à esquerda e à direita de cada palavra, o que lhe permite capturar relações semânticas profundas. Essa característica o diferencia de modelos unidirecionais, como o GPT da época, que processavam o texto em apenas uma direção (da esquerda para a direita).  
+
+Historicamente, o BERT é fruto do avanço iniciado pelo Transformer, apresentado em 2017 no artigo *"Attention is All You Need"*. Enquanto o Transformer foi projetado para várias aplicações, o BERT focou exclusivamente na parte de *encoders*, ideal para tarefas de compreensão de texto. Seu impacto foi imediato: redefiniu benchmarks como SQuAD e GLUE e se tornou a base para muitos modelos subsequentes em PLN.  
+
+O treinamento do BERT é realizado em duas tarefas principais: *Masked Language Modeling (MLM)* e *Next Sentence Prediction (NSP)*. No MLM, algumas palavras são mascaradas no texto de entrada, e o modelo aprende a prever essas palavras com base no contexto. Já no NSP, o modelo aprende a determinar se uma sentença segue outra de forma lógica, o que melhora sua capacidade de entender relações entre frases. Além disso, o BERT utiliza um método de tokenização chamado *WordPiece*, que divide palavras em subpalavras, permitindo maior flexibilidade no tratamento de palavras raras ou desconhecidas.  
+
+**Vantagens**<br/>
+
+Entre as vantagens do BERT, destaca-se sua capacidade de entender profundamente o contexto das palavras, o que o torna especialmente eficaz em tarefas como classificação de texto, extração de entidades e respostas a perguntas. Ele também popularizou o conceito de transferência de aprendizado no PLN, onde um modelo pré-treinado em grandes conjuntos de dados pode ser ajustado (finetunado) para tarefas específicas com menos dados. Essa abordagem economiza tempo e recursos computacionais.  
+
+**Desvantagens**<br/>
+
+No entanto, o BERT apresenta algumas limitações. Seu custo computacional é elevado, tanto para treinamento quanto para inferência, devido ao grande número de parâmetros. Isso o torna pouco adequado para dispositivos com recursos limitados, como smartphones. Além disso, como é baseado apenas em *encoders*, o BERT não é ideal para tarefas de geração de texto, como as realizadas por modelos baseados em *decoders*, como GPT.  <br/><br/>
+
+Em resumo, o BERT é um dos alicerces dos LLMs modernos, influenciando diretamente modelos e técnicas subsequentes. Ele estabeleceu um novo padrão no PLN ao oferecer um entendimento contextual robusto e soluções altamente eficazes para tarefas de compreensão de texto, mesmo que com algumas limitações práticas.
+
+
+---
+
+## Métricas de Avaliação de Performance dos LLMs
 
 A avaliação da performance de LLMs (Large Language Models) em tarefas de Processamento de Linguagem Natural (PLN) envolve várias métricas que ajudam a medir a precisão, a coerência e a relevância dos textos gerados ou das previsões feitas. As métricas variam dependendo da tarefa específica, mas aqui estão algumas das mais comuns:
 
