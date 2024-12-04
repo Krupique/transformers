@@ -81,20 +81,20 @@ These are just a few examples, and the list continues to grow as the technology 
 
 ---
 
-## O que é Processamento de Linguagem Natural?
+## What is Natural Language Processing?
 
-Processamento de Linguagem Natural (PLN) é um campo de estudo e aplicação que se situa na interseção da ciência da computação, inteligência artificial e linguística. O objetivo do PLN é capacitar  os  computadores para  entender,  interpretar,  manipular  e  responder  a  linguagem humana de uma forma útil e significativa. Aqui estão os principais aspectos do PLN:
+Natural Language Processing (NLP) is a field of study and application at the intersection of computer science, artificial intelligence, and linguistics. The goal of NLP is to enable computers to understand, interpret, manipulate, and respond to human language in a useful and meaningful way. Here are the key aspects of NLP:
 
-- **Compreensão  de  Linguagem**: PLN  envolve  o  desenvolvimento  de  algoritmos  e  sistemas que permitem aos computadores compreender texto e fala humanos. Isso inclui a capacidade de entender gramática, semântica, contexto e nuances da linguagem.
-- **Geração  de  Linguagem**: Além  de  compreender  a  linguagem,  o  PLN  também  aborda  a geração de texto e fala. Isso pode envolver a criação de respostas coerentes em uma conversa, a geração de textos escritos em diferentes estilos, ou a tradução automática entre idiomas.
-- **Análise  de  Sentimento**: O  PLN  pode  ser  usado  para  analisar  opiniões  e  sentimentos  em textos, como avaliar se um comentário é positivo, negativo ou neutro.
-- **Extração  de  Informações**: Essa  área  do  PLN  foca  em  extrair  informações  específicas  de textos, como nomes, locais, datas ou outros dados relevantes.
-- **Processamento de Fala**: O PLN também se estende ao reconhecimento e síntese de fala, permitindo que os sistemas de IA entendam e produzam linguagem falada.
-- **Tradução  Automática**: Traduzir  texto  ou  fala  de  um  idioma  para  outro  é  outra  aplicação importante do PLN, embora seja um desafio devido às complexidades e nuances dos idiomas.
-- **Resposta  a  Perguntas**: Sistemas  de  PLN  podem  ser  programados  para  responder  a perguntas feitas em linguagem natural, encontrando e fornecendo a informação relevante.
-- **Assistentes  Virtuais  e  Chatbots**: Muitos  assistentes  virtuais  e  chatbots  usam  PLN  para entender e responder a comandos ou perguntas dos usuários.
+- **Language Understanding**: NLP involves the development of algorithms and systems that allow computers to understand human text and speech. This includes the ability to understand grammar, semantics, context, and nuances of language.
+- **Language Generation**: In addition to understanding language, NLP also deals with generating text and speech. This can involve creating coherent responses in a conversation, generating written texts in different styles, or automatic translation between languages.
+- **Sentiment Analysis**: NLP can be used to analyze opinions and sentiments in texts, such as determining whether a comment is positive, negative, or neutral.
+- **Information Extraction**: This area of NLP focuses on extracting specific information from texts, such as names, locations, dates, or other relevant data.
+- **Speech Processing**: NLP also extends to speech recognition and synthesis, allowing AI systems to understand and produce spoken language.
+- **Machine Translation**: Translating text or speech from one language to another is another important application of NLP, though it presents challenges due to the complexities and nuances of languages.
+- **Question Answering**: NLP systems can be programmed to answer questions asked in natural language, by finding and providing the relevant information.
+- **Virtual Assistants and Chatbots**: Many virtual assistants and chatbots use NLP to understand and respond to user commands or questions.
 
-PLN é uma área de pesquisa e desenvolvimento ativa e em rápida evolução, impulsionada pelo  aumento  da  quantidade  de  dados  de  texto  e  fala  disponíveis,  avanços  em  algoritmos  de aprendizado de máquina e maior capacidade de processamento computacional. As aplicações do PLN estão se tornando cada vez mais comuns em nosso dia a dia, desde ferramentas simples de autocorreção até sofisticados sistemas de interação homem-máquina
+NLP is an active and rapidly evolving area of research and development, driven by the increasing amount of available text and speech data, advancements in machine learning algorithms, and greater computational processing power. The applications of NLP are becoming more common in our daily lives, from simple spell check tools to sophisticated human-machine interaction systems.
 
 ---
 
