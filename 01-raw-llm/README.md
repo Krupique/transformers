@@ -1,34 +1,34 @@
-# Criando um Modelo de LLM baseado no BERT a partir do zero
+# Creating an LLM Model Based on BERT from Scratch  
 
-## Objetivo do Projeto
+## Project Objective  
 
-Este projeto tem como objetivo criar um Modelo de Linguagem Grande (LLM) baseado na arquitetura BERT a partir do zero, explorando cada etapa fundamental do seu desenvolvimento. O processo abrange desde o carregamento e preparação de dados, construção de um vocabulário otimizado e definição de tokens especiais, até a implementação completa da arquitetura do modelo, composta por módulos como Embedding, Multi-Head Attention e Encoder Layers. Além disso, o projeto inclui a configuração de hiperparâmetros, estratégias de treinamento, avaliação do modelo e geração de previsões. Ao seguir este passo a passo, buscamos não apenas reproduzir a eficácia do BERT, mas também compreender profundamente os princípios e mecanismos que tornam essa arquitetura tão poderosa no processamento de linguagem natural.
+This project aims to create a Large Language Model (LLM) based on the BERT architecture from scratch, exploring every fundamental step of its development. The process encompasses tasks ranging from data loading and preparation, building an optimized vocabulary, and defining special tokens to implementing the complete model architecture. This architecture includes modules such as Embedding, Multi-Head Attention, and Encoder Layers. Additionally, the project covers hyperparameter configuration, training strategies, model evaluation, and generating predictions. By following this step-by-step approach, the goal is not only to reproduce the effectiveness of BERT but also to gain a deep understanding of the principles and mechanisms that make this architecture so powerful in natural language processing.  
 
-1. **Carregamento dos Dados**  
-   Preparar e carregar o corpus de texto que será usado para treinar o modelo, garantindo sua qualidade e adequação ao domínio de aplicação.
+1. **Data Loading**  
+   Prepare and load the text corpus that will be used to train the model, ensuring its quality and relevance to the application domain.  
 
-2. **Construção do Vocabulário e Definição de Tokens Especiais**  
-   Criar o conjunto de tokens que o modelo usará, incluindo tokens especiais ([CLS], [SEP], [MASK] e [PAD]), essenciais para tarefas como classificação, separação de sentenças e mascaramento.
+2. **Vocabulary Construction and Special Token Definition**  
+   Build the set of tokens that the model will use, including special tokens ([CLS], [SEP], [MASK], and [PAD]) essential for tasks such as classification, sentence separation, and masking.  
 
-3. **Definição dos Hiperparâmetros**  
-   Configurar os parâmetros que controlam o treinamento e a arquitetura do modelo, como número de camadas, cabeças de atenção, tamanho do vocabulário e taxa de aprendizado.
+3. **Hyperparameter Definition**  
+   Configure the parameters that control the model’s training and architecture, such as the number of layers, attention heads, vocabulary size, and learning rate.  
 
-4. **Criação de Batches para Treinamento**  
-   Dividir os dados em lotes menores para otimizar a eficiência do treinamento e permitir que o modelo processe grandes volumes de dados de forma incremental.
+4. **Batch Creation for Training**  
+   Split the data into smaller batches to optimize training efficiency and enable the model to process large data volumes incrementally.  
 
-5. **Construção do Modelo**
-   - **Módulo de Embedding:** Converte tokens em vetores de alta dimensão, incorporando informações de posição e token.  
-   - **Scaled Dot Product Attention:** Implementa a atenção no modelo, permitindo que ele foque em partes relevantes do texto.  
-   - **Multi-Head Attention Module:** Expande a capacidade de atenção do modelo, permitindo a análise de diferentes aspectos do texto simultaneamente.  
-   - **Positional Feedforward Module:** Adiciona uma camada não linear para melhorar a expressividade do modelo.  
-   - **Módulo Encoder Layer:** Combina atenção multi-cabeça e feedforward, formando a base do modelo BERT.  
-   - **Arquitetura Final:** Integra todas as camadas para criar a estrutura completa do modelo BERT.
+5. **Model Construction**  
+   - **Embedding Module:** Converts tokens into high-dimensional vectors, incorporating both token and positional information.  
+   - **Scaled Dot Product Attention:** Implements the attention mechanism, enabling the model to focus on relevant parts of the text.  
+   - **Multi-Head Attention Module:** Enhances the model's attention capability, allowing it to analyze different aspects of the text simultaneously.  
+   - **Positional Feedforward Module:** Adds a non-linear layer to improve the model's expressiveness.  
+   - **Encoder Layer Module:** Combines multi-head attention and feedforward components, forming the foundation of the BERT model.  
+   - **Final Architecture:** Integrates all layers to create the complete BERT model structure.  
 
-6. **Treinamento e Avaliação do Modelo**  
-   Treinar o modelo com os dados e avaliar seu desempenho em tarefas específicas, ajustando parâmetros para melhorar os resultados.
+6. **Model Training and Evaluation**  
+   Train the model with the data and evaluate its performance on specific tasks, fine-tuning parameters to improve results.  
 
-7. **Realização de Previsões com o Modelo**  
-   Utilizar o modelo treinado para inferir resultados em dados novos, demonstrando sua aplicação prática e capacidade preditiva.
+7. **Generating Predictions with the Model**  
+   Use the trained model to infer results on new data, demonstrating its practical application and predictive capabilities.  
 
 ---
 
