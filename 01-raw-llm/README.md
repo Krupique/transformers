@@ -32,6 +32,22 @@ This project aims to create a Large Language Model (LLM) based on the BERT archi
 
 ---
 
+## Project Structure
+
+```
+└── 01-raw-llm/          # Root directory
+    ├── images/          # Images for documentation
+    │   ├── bert1.png    
+    │   ├── bert2.png    
+    │   ├── bert3.png    
+    │   └── bert4.png    
+    ├── llm.ipynb        # LLM source-code
+    ├── README.md        # Project and concepts explanation 
+    └── text.txt         # Data
+```
+
+---
+
 ## **Concept of Generative AI**
 
 Generative Artificial Intelligence, particularly in the context of Large Language Models (LLMs), refers to the ability of these models to create new and original content based on patterns and information learned during training on vast volumes of textual data. This generative aspect stands out for several reasons:
