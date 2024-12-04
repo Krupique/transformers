@@ -139,23 +139,21 @@ The ability of Transformers to handle long-range dependencies in text and their 
 
 ---
 
-## Arquitetura BERT e sua Relação com os LLMs
+## BERT Architecture and Its Relationship with LLMs
 
-O **BERT (Bidirectional Encoder Representations from Transformers)** é uma das arquiteturas mais influentes no campo do Processamento de Linguagem Natural (PLN) e um marco no desenvolvimento de Modelos de Linguagem Grande (LLMs). Criado pelo Google AI em 2018, o BERT é baseado na arquitetura Transformer e introduziu o conceito de aprendizado bidirecional para modelagem de linguagem. Isso significa que ele analisa o contexto de palavras olhando simultaneamente para os tokens à esquerda e à direita de cada palavra, o que lhe permite capturar relações semânticas profundas. Essa característica o diferencia de modelos unidirecionais, como o GPT da época, que processavam o texto em apenas uma direção (da esquerda para a direita).  
+**BERT (Bidirectional Encoder Representations from Transformers)** is one of the most influential architectures in the field of Natural Language Processing (NLP) and a milestone in the development of Large Language Models (LLMs). Created by Google AI in 2018, BERT is based on the Transformer architecture and introduced the concept of bidirectional learning for language modeling. This means it analyzes the context of words by simultaneously looking at the tokens to the left and right of each word, allowing it to capture deep semantic relationships. This feature distinguishes it from unidirectional models, such as the GPT of the time, which processed text in only one direction (from left to right).
 
-Historicamente, o BERT é fruto do avanço iniciado pelo Transformer, apresentado em 2017 no artigo *"Attention is All You Need"*. Enquanto o Transformer foi projetado para várias aplicações, o BERT focou exclusivamente na parte de *encoders*, ideal para tarefas de compreensão de texto. Seu impacto foi imediato: redefiniu benchmarks como SQuAD e GLUE e se tornou a base para muitos modelos subsequentes em PLN.  
+Historically, BERT is the result of the advancement initiated by the Transformer, introduced in 2017 in the paper *"Attention is All You Need"*. While the Transformer was designed for multiple applications, BERT focused exclusively on the *encoders*, making it ideal for text comprehension tasks. Its impact was immediate: it redefined benchmarks like SQuAD and GLUE and became the foundation for many subsequent models in NLP.
 
-O treinamento do BERT é realizado em duas tarefas principais: *Masked Language Modeling (MLM)* e *Next Sentence Prediction (NSP)*. No MLM, algumas palavras são mascaradas no texto de entrada, e o modelo aprende a prever essas palavras com base no contexto. Já no NSP, o modelo aprende a determinar se uma sentença segue outra de forma lógica, o que melhora sua capacidade de entender relações entre frases. Além disso, o BERT utiliza um método de tokenização chamado *WordPiece*, que divide palavras em subpalavras, permitindo maior flexibilidade no tratamento de palavras raras ou desconhecidas.  
+BERT's training is done in two main tasks: *Masked Language Modeling (MLM)* and *Next Sentence Prediction (NSP)*. In MLM, some words are masked in the input text, and the model learns to predict these words based on the context. In NSP, the model learns to determine whether one sentence logically follows another, improving its ability to understand relationships between sentences. Additionally, BERT uses a tokenization method called *WordPiece*, which splits words into subwords, allowing greater flexibility in handling rare or unknown words.
 
-**Vantagens**<br/>
+**Advantages**  
+Among BERT's advantages is its ability to deeply understand the context of words, making it especially effective in tasks like text classification, entity extraction, and question answering. It also popularized the concept of transfer learning in NLP, where a model pre-trained on large datasets can be fine-tuned for specific tasks with less data. This approach saves time and computational resources.
 
-Entre as vantagens do BERT, destaca-se sua capacidade de entender profundamente o contexto das palavras, o que o torna especialmente eficaz em tarefas como classificação de texto, extração de entidades e respostas a perguntas. Ele também popularizou o conceito de transferência de aprendizado no PLN, onde um modelo pré-treinado em grandes conjuntos de dados pode ser ajustado (finetunado) para tarefas específicas com menos dados. Essa abordagem economiza tempo e recursos computacionais.  
+**Disadvantages**  
+However, BERT has some limitations. Its computational cost is high, both for training and inference, due to the large number of parameters. This makes it unsuitable for devices with limited resources, such as smartphones. Additionally, since it is based solely on *encoders*, BERT is not ideal for text generation tasks, which are better suited for models based on *decoders*, like GPT.
 
-**Desvantagens**<br/>
-
-No entanto, o BERT apresenta algumas limitações. Seu custo computacional é elevado, tanto para treinamento quanto para inferência, devido ao grande número de parâmetros. Isso o torna pouco adequado para dispositivos com recursos limitados, como smartphones. Além disso, como é baseado apenas em *encoders*, o BERT não é ideal para tarefas de geração de texto, como as realizadas por modelos baseados em *decoders*, como GPT.  <br/><br/>
-
-Em resumo, o BERT é um dos alicerces dos LLMs modernos, influenciando diretamente modelos e técnicas subsequentes. Ele estabeleceu um novo padrão no PLN ao oferecer um entendimento contextual robusto e soluções altamente eficazes para tarefas de compreensão de texto, mesmo que com algumas limitações práticas.
+In summary, BERT is one of the cornerstones of modern LLMs, directly influencing subsequent models and techniques. It set a new standard in NLP by providing a robust contextual understanding and highly effective solutions for text comprehension tasks, even though it has some practical limitations.
 
 
 ---
